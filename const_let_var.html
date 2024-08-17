@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>const, let e var</title>
+</head>
+<body class="overflow">
+    <h1>Variáveis JS</h1>
+    <h2 class="italic">const, let e var</h2>
+    <p>Variáveis no JavaScript são como caixas onde você guarda informações que quer usar depois, como números, textos ou objetos. Imagine que você está criando um jogo: você precisa armazenar a pontuação do jogador, o nome dele, e outras informações.</p>
+    <h2>Diferenças entre as variáveis JS</h2>
+    <p>Existem três tipos principais de variáveis no JavaScript: var, let e const. Var é a forma antiga e pode ser confusa porque tem escopo de função, o que significa que ela pode ser acessada de qualquer lugar dentro da função onde foi declarada. Let e const são mais modernos e têm escopo de bloco, o que significa que só podem ser acessados dentro do bloco onde foram declarados. A principal diferença entre let e const é que const não pode ser reatribuída depois de definida.</p>
+    <h2>Quando usar cada variável</h2>    
+    <p>Use let quando você precisar de uma variável que pode mudar de valor ao longo do tempo. Use const para valores que não devem mudar, como configurações ou valores fixos. Evite usar var a menos que você esteja lidando com código legado que precisa manter.</p>
+    <h2>Exemplos de Boas Práticas com as variáveis JS</h2>
+    <p>Prefira sempre usar const a menos que você saiba que o valor precisará mudar, nesse caso, use let. Isso ajuda a prevenir bugs, porque fica claro que aquele valor não deve mudar. Organize seu código para minimizar o escopo das variáveis, declarando-as o mais próximo possível do seu uso.</p>
+    <h2>Exceções e regras</h2>
+    <p>Use var apenas se você estiver mantendo ou trabalhando em código antigo. Lembre-se: const para valores constantes e let para valores mutáveis. Evite misturar tipos de variáveis no mesmo bloco de código para manter a clareza.</p>
+</body>
+</html>
