@@ -7,7 +7,7 @@
     <title>Tags HTML</title>
 </head>
 <body class="overflow">
-    <h1>Tags HTML</h1>
+    <h1>Tags e Atributos HTML</h1>
     <h2>Lista de tags HTML</h2>
     <div class="container_tags">
         <div class="tag_s">
@@ -196,6 +196,616 @@
             <h3>.w</h3>
                 <li>wbr</li> 
         </div>         
-    </div>
+    </div>   
+    <section class="atributos_html">
+        <h2>Atributos HTML</h2>
+        <h3>Globais (aceitas em todas as tags)</h3>
+        <h3>class</h3>
+        <p>É uma lista separada por espaço das classes do elemento. as classes permitem ao CSS e ao JavaScript selecionar e acessar elementos específicos atraves dos seletores de classe ou funciona como um método Document.getElementsByClassName().</p>
+        <h3>id</h3>
+        <p>Define um identificador exclusivo (ID) que deve ser único em todo o documento. Seu objetivo é identificar o elemento ao vincular (usando um identificador de fragmento), um script ou estilo (com CSS).</p>
+        <h3>lang</h3>
+        <p>Participa da definição do idioma do elemento, o idioma no qual os elementos não-editáveis estão escritos, ou o idioma no qual elementos editáveis devem ser escritos. A Tag contém um único valor no formato definido no documento da IEFT Tags para Identificação de Idiomas (BCP47). xml:lang tem prioridade mais alta que lang.</p>
+        <h3>style</h3>
+        <p>Contém regras de declarações CSS para aplicar no elemento. Note que é recomendado que as regras CSS fiquem num arquivo, ou vários arquivos, separado do HTML. Este atributo e o elemento *style* tem principalmente o propósito para rápida estilização do elemento, como por exemplo para testes.</p>
+        <h3>accesskey</h3>
+        <p>Fornece uma dica para gerar um atalho de teclado para o elemento atual. Este atributo consiste em uma lista de caracteres separados por espaços. O navegador deve usar o primeiro que existe no layout do teclado do computador.</p>
+        <h3>contenteditable</h3>
+        <p>É um atributo enumerado que indica se o elemento deve ser editado pelo usuário. Se assim for, o navegador modifica seu widget para permitir a edição. O atributo deve ter um dos seguintes valores:
+
+            true ou uma string vazia, indica que o elemento deve ser editável;
+            false, indica que o elemento não deve ser editável.
+            contextmenu
+            É o id de um *menu* para usar como o menu contextual para este elemento.</p>
+            <h3>data</h3>
+            <p>Forma uma classe de atributos, denominado de dados personalizados, que permite troca de informações proprietárias entre o HTML e a sua representação no DOM pode ser usada por scripts. Todos esses dados personalizados estão disponíveis através da interface do elemento HTMLElement em que o atributo está definido. A propriedade HTMLElement.dataset dá acesso a eles.</p>
+            <h3>dir</h3>
+            <p>É um atributo enumerado que indica a direcionalidade do texto do elemento. Pode ter os seguintes valores:
+
+                ltr, significa da esquerda para a direita e deve ser usado para idiomas que são escritos da esquerda para a direita (como o português do Brasil, inglês, espanhol, etc);
+                rtl, significa da direita para a esquerda e deve ser usado para idiomas que são escritos da direita para a esquerda (como o árabe);
+                auto, que permite que o agente do usuário decida. Ele usa um algoritmo básico, pois analisa os caracteres dentro do elemento até encontrar um caractere com uma direcionalidade forte e, em seguida, aplica essa direcionalidade para todo o elemento.</p>
+            <h3>draggable</h3>
+            <p>draggable Experimental
+                É um atributo enumerado que indica se o elemento pode ser arrastado, usando a API Drag and Drop. Pode ter os seguintes valores:
+                
+                true, que indica que o elemento pode ser arrastado
+                false, que indica que o elemento não pode ser arrastado.</p>  
+            <h3>dropzone</h3>
+            <p>É um atributo enumerado que indica quais tipos de conteúdo podem ser descartados em um elemento, usando a API Drag and Drop. Pode ter os seguintes valores:
+
+                copy, que indica que o lançamento criará uma cópia do elemento que foi arrastado.
+                move, que indica que o elemento que foi arrastado será movido para esta nova localização.
+                link, irá criar um link para os dados arrastados.</p>    
+            <h3>hidden</h3>  
+            <p>Um atributo booleano indica que o elemento ainda não é relevante ou não é mais relevante. Por exemplo, ele pode ser usado para ocultar elementos da página que não podem ser usados até que o processo de login tenha sido concluído. O navegador não renderizará esses elementos. Este atributo não deve ser usado para ocultar conteúdo que possa ser legível.</p>    
+            <h3>spellcheck</h3>
+            <p>É um atributo enumerado que define se o elemento pode ser verificado por errors de ortografia. Pode ter os seguintes valores:
+
+                true, indica que o elemento deve ser, se possível, verificado por errors ortográficos;
+                false, indica que o elemento não deve ser verificado quanto à ortogratia do texto.</p>
+            <h3>tabindex</h3>
+            <p>É um atributo que recebe valores inteiros e indica se um elemento pode receber o foco de entrada de valores (é focável), se ele deve entrar na sequência da navegação pelo teclado (através da tecla TAB), e qual posição da sequência. Sobre seus valores:
+
+                um valor negativo indica que o elemento é focável, mas não é alcançável pela navegação sequencial do teclado (através da tecla TAB);
+                0 indica que o elemento é focável e alcançavel pela navegação sequencial do teclado, mas sua ordem de seleção relativa é definida pela convenção da plataforma (ou do navegador);
+                um valor positivo indica que o elemento é focável e alcançável pela navegação sequencial do teclado; sua ordem de seleção relativa é definida pelo valor colocado: a sequência segue em ordem crescente definida no tabindex. Se vários elementos possuem o mesmo valor de tabindex, sua ordem relativa é estabelecida pela posição relativa no documento HTML.</p>
+            <h3>title</h3>
+            <p>Contém um texto representativo sobre a informação relacionada ao elemento ao qual este atributo pertence. Tal informação pode, mas não necessariamente, ser apresentada através de um tooltip.</p>        
+            <h3>translate</h3>
+            <p>É um atributo enumerado, usado para especificar se um atributo de um elemento e os valores dos seus nós descendentes (filhos) Text serão traduzidos quando a página for localizada, ou se não serão alterados. Pode ter os seguintes valores:
+
+                yes ou string vazia: indicam que o elemento será traduzido;
+                no: indica que o elemento não será traduzido.</p>    
+        
+        </section>
+
+        <section class="tabela_de_atributos">
+
+            <h3>Atributos gerais:</h3>
+            <table class="tabela">
+                <thead>
+                  <tr>
+                    <th>Nome do Atributo</th>
+                    <th>Elementos</th>
+                    <th>Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>accept</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/form"><code>&lt;form&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a></td>
+                    <td>Lista de tipos que o servidor aceita, tipicamente um tipo de arquivo.</td>
+                  </tr>
+                  <tr>
+                    <td>accept-charset</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/form"><code>&lt;form&gt;</code></a></td>
+                    <td>Lista de conjunto de caracteres suportados.</td>
+                  </tr>
+                  <tr>
+                    <td>accesskey</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Define um atalho no teclado para ativar ou adicionar foco ao elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>action</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/form"><code>&lt;form&gt;</code></a></td>
+                    <td>A URI de um programa que processa a informação submetida através do formulário.</td>
+                  </tr>
+                  <tr>
+                    <td>align</td>
+                    <td><a class="page-not-created" title="A documentação sobre isto ainda não foi escrita; por favor considere contribuir!"><code>&lt;applet&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/caption"><code>&lt;caption&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/col"><code>&lt;col&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/colgroup"><code>&lt;colgroup&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/hr"><code>&lt;hr&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/iframe"><code>&lt;iframe&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/table"><code>&lt;table&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/tbody"><code>&lt;tbody&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/td"><code>&lt;td&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/tfoot"><code>&lt;tfoot&gt;</code></a> , <a href="/pt-BR/docs/Web/HTML/Element/th"><code>&lt;th&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/thead"><code>&lt;thead&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/tr"><code>&lt;tr&gt;</code></a></td>
+                    <td>Especifica o alinhamento horizontal do elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>alt</td>
+                    <td><a class="page-not-created" title="A documentação sobre isto ainda não foi escrita; por favor considere contribuir!"><code>&lt;applet&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/area"><code>&lt;area&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a></td>
+                    <td>Texto alternativo caso uma imagem não possa ser exibida.</td>
+                  </tr>
+                  <tr>
+                    <td>async</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a></td>
+                    <td>Indica que o script deve ser executado assíncrono.</td>
+                  </tr>
+                  <tr>
+                    <td>autocomplete</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/form"><code>&lt;form&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a></td>
+                    <td>Indica se controles neste formulário podem por padrão ter seus valores completados automaticamente pelo navegador.</td>
+                  </tr>
+                  <tr>
+                    <td>autofocus</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/select"><code>&lt;select&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td>O elemento deve ser focado automaticamente após a página ser carregada.</td>
+                  </tr>
+                  <tr>
+                    <td>autoplay</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/audio"><code>&lt;audio&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a></td>
+                    <td>O aúdio ou vídeo deve ser reproduzido assim que possível.</td>
+                  </tr>
+                  <tr>
+                    <td>bgcolor</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/body"><code>&lt;body&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/col"><code>&lt;col&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/colgroup"><code>&lt;colgroup&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/marquee"><code>&lt;marquee&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/table"><code>&lt;table&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/tbody"><code>&lt;tbody&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/tfoot"><code>&lt;tfoot&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/td"><code>&lt;td&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/th"><code>&lt;th&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/tr"><code>&lt;tr&gt;</code></a></td>
+                    <td>Cor do plano de fundo do elemento.Nota: Este é um atributo legado. Por favor use a propriedade CSS <a href="/pt-BR/docs/Web/CSS/background-color"><code>background-color</code></a> em vez disso.</td>
+                  </tr>
+                  <tr>
+                    <td>border</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/object"><code>&lt;object&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/table"><code>&lt;table&gt;</code></a></td>
+                    <td>A largura da borda.Nota: este é um atributo legado. Por favor use a propriedade CSS <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/CSS/border"><code>border</code></a> em vez disso.</td>
+                  </tr>
+                  <tr>
+                    <td>buffered</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/audio"><code>&lt;audio&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a></td>
+                    <td>Contém o intervalo de tempo da mídia que já foi carregada.</td>
+                  </tr>
+                  <tr>
+                    <td>charset</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/meta"><code>&lt;meta&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a></td>
+                    <td>Declara a codificação dos caracteres da página ou do script.</td>
+                  </tr>
+                  <tr>
+                    <td>checked</td>
+                    <td><a class="page-not-created" title="A documentação sobre isto ainda não foi escrita; por favor considere contribuir!"><code>&lt;command&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a></td>
+                    <td>Indica se o elemento deve ser checado no carregamento da página.</td>
+                  </tr>
+                  <tr>
+                    <td>cite</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/blockquote"><code>&lt;blockquote&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/del"><code>&lt;del&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/ins"><code>&lt;ins&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/q"><code>&lt;q&gt;</code></a></td>
+                    <td>Contêm uma URI que aponta para a fonte da citação ou alteração.</td>
+                  </tr>
+                  <tr>
+                    <td>class</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Frequentemente usado com CSS para estilizar os elementos com propriedades comuns.</td>
+                  </tr>
+                  <tr>
+                    <td>code</td>
+                    <td><a class="page-not-created" title="A documentação sobre isto ainda não foi escrita; por favor considere contribuir!"><code>&lt;applet&gt;</code></a></td>
+                    <td>Especifica a URL do arquivo de classe do miniaplicativo que será carregado e executado.</td>
+                  </tr>
+                  <tr>
+                    <td>codebase</td>
+                    <td><a class="page-not-created" title="A documentação sobre isto ainda não foi escrita; por favor considere contribuir!"><code>&lt;applet&gt;</code></a></td>
+                    <td>Este atributo fornece a URL absoluta ou relativa do diretório onde os arquivos .class do miniaplicativo são armazenados.</td>
+                  </tr>
+                  <tr>
+                    <td>color</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/CSS/CSS_fonts"><code>&lt;basefont&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/font"><code>&lt;font&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/hr"><code>&lt;hr&gt;</code></a></td>
+                    <td>Este atributo define a cor do texto usando o nome de uma cor ou uma cor especificada em hexadecimal através do formato #RRGGBB.Nota: este é um atributo legado. Por favor use a propriedade CSS <a href="/pt-BR/docs/Web/CSS/color"><code>color</code></a> em vez disso.</td>
+                  </tr>
+                  <tr>
+                    <td>cols</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td>Define o número de colunas numa area de texto.</td>
+                  </tr>
+                  <tr>
+                    <td>colspan</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/td"><code>&lt;td&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/th"><code>&lt;th&gt;</code></a></td>
+                    <td>O atributo colspan define o número de colunas que uma célula deve conter.</td>
+                  </tr>
+                  <tr>
+                    <td>content</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/meta"><code>&lt;meta&gt;</code></a></td>
+                    <td>Um valor associado com <code>http-equiv</code> ou <code>name</code> dependendo do contexto.</td>
+                  </tr>
+                  <tr>
+                    <td>contenteditable</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Indica se o conteúdo do elemento é editável.</td>
+                  </tr>
+                  <tr>
+                    <td>contextmenu</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Define o ID de um elemento <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/menu"><code>&lt;menu&gt;</code></a> que servirá como o menu de contexto de um outro elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>controls</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/audio"><code>&lt;audio&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a></td>
+                    <td>Indica se o navegador deve mostrar ou não os controles de reprodução ao usuário.</td>
+                  </tr>
+                  <tr>
+                    <td>coords</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/area"><code>&lt;area&gt;</code></a></td>
+                    <td>Uma escolha de valores especificando as coordenadas da região hot-spot.</td>
+                  </tr>
+                  <tr>
+                    <td>data</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/object"><code>&lt;object&gt;</code></a></td>
+                    <td>Especifica a URL do recurso.</td>
+                  </tr>
+                  <tr>
+                    <td>datetime</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/del"><code>&lt;del&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/ins"><code>&lt;ins&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/time"><code>&lt;time&gt;</code></a></td>
+                    <td>Indica a data e o horário associados ao elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>default</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/track"><code>&lt;track&gt;</code></a></td>
+                    <td>Indica que a faixa deve estar habilitada a não ser que as preferências do usuário indiquem algo diferente.</td>
+                  </tr>
+                  <tr>
+                    <td>defer</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a></td>
+                    <td>Indica que o script deve ser executado após a página ter sido analisada.</td>
+                  </tr>
+                  <tr>
+                    <td>dir</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Defina a direção do texto. Os valores permitidos são ltr (Esquerda para direita) e rtl (Direita para esquerda)</td>
+                  </tr>
+                  <tr>
+                    <td>dirname</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>disabled</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a>, <a class="page-not-created" title="A documentação sobre isto ainda não foi escrita; por favor considere contribuir!"><code>&lt;command&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/fieldset"><code>&lt;fieldset&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/optgroup"><code>&lt;optgroup&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/option"><code>&lt;option&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/select"><code>&lt;select&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td>Indica se o usuário pode ou não interagir com o elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>draggable</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Define se o elemento pode ser arrastado.</td>
+                  </tr>
+                  <tr>
+                    <td>dropzone</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Indica que o elemento aceita a soltagem de conteúdo nele.</td>
+                  </tr>
+                  <tr>
+                    <td>enctype</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/form"><code>&lt;form&gt;</code></a></td>
+                    <td>Define o tipo de conteúdo da data do formulário quando o <code>method</code> é POST.</td>
+                  </tr>
+                  <tr>
+                    <td>for</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/label"><code>&lt;label&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/output"><code>&lt;output&gt;</code></a></td>
+                    <td>Descreve elementos na qual pertencem a este.</td>
+                  </tr>
+                  <tr>
+                    <td>form</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/fieldset"><code>&lt;fieldset&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/label"><code>&lt;label&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/meter"><code>&lt;meter&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/object"><code>&lt;object&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/output"><code>&lt;output&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/progress"><code>&lt;progress&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/select"><code>&lt;select&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td>Indica o formulário que é o proprietário do elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>headers</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/td"><code>&lt;td&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/th"><code>&lt;th&gt;</code></a></td>
+                    <td>IDs dos elementos <code>&lt;th&gt;</code> na qual se aplicam a este elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>height</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/canvas"><code>&lt;canvas&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/embed"><code>&lt;embed&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/iframe"><code>&lt;iframe&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/object"><code>&lt;object&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a></td>
+                    <td>Nota: Em algumas instâncias, tal como <a href="/pt-BR/docs/Web/HTML/Element/div"><code>&lt;div&gt;</code></a>, isto é um atributo legado, em cujo caso a propriedade CSS <a href="/pt-BR/docs/Web/CSS/height"><code>height</code></a> deveria ser usado em vez. Em outros casos, assim como <a href="/pt-BR/docs/Web/HTML/Element/canvas"><code>&lt;canvas&gt;</code></a>, a altura deve ser especificado com esse atributo.</td>
+                  </tr>
+                  <tr>
+                    <td>hidden</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Indica a relevância de um elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>high</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/meter"><code>&lt;meter&gt;</code></a></td>
+                    <td>Indica o menor limite da faixa superior.</td>
+                  </tr>
+                  <tr>
+                    <td>href</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/area"><code>&lt;area&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/base"><code>&lt;base&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a></td>
+                    <td>A URL de um recurso ligado.</td>
+                  </tr>
+                  <tr>
+                    <td>hreflang</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/area"><code>&lt;area&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a></td>
+                    <td>Especifica o idioma de um recurso ligado.</td>
+                  </tr>
+                  <tr>
+                    <td>http-equiv</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/meta"><code>&lt;meta&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>icon</td>
+                    <td><a class="page-not-created" title="A documentação sobre isto ainda não foi escrita; por favor considere contribuir!"><code>&lt;command&gt;</code></a></td>
+                    <td>Especifica uma imagem na qual represente o comando.</td>
+                  </tr>
+                  <tr>
+                    <td>id</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Frequentemente usado com CSS para estilizar um elemento específico. O valor deste atributo deve ser único.</td>
+                  </tr>
+                  <tr>
+                    <td>ismap</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a></td>
+                    <td>Indica que a imagem é parte de um mapa de imagem "sever-side".</td>
+                  </tr>
+                  <tr>
+                    <td>itemprop</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>kind</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/track"><code>&lt;track&gt;</code></a></td>
+                    <td>Especifica o tipo de caminho de texto.</td>
+                  </tr>
+                  <tr>
+                    <td>label</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/track"><code>&lt;track&gt;</code></a></td>
+                    <td>Especifica um título "user-releadable" de um caminho de texto.</td>
+                  </tr>
+                  <tr>
+                    <td>lang</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Define o idioma usado no elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>language</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a></td>
+                    <td>Define o idioma do script usado no elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>list</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a></td>
+                    <td>Identifica uma lista de opções pré definidas para sugerir ao usuário.</td>
+                  </tr>
+                  <tr>
+                    <td>loop</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/audio"><code>&lt;audio&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/audio"><code>&lt;bgsound&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/marquee"><code>&lt;marquee&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a></td>
+                    <td>Indica se a mídia deveria começar tocando do começo quando ela é finalizada.</td>
+                  </tr>
+                  <tr>
+                    <td>low</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/meter"><code>&lt;meter&gt;</code></a></td>
+                    <td>Indica o maior limite da menor distância.</td>
+                  </tr>
+                  <tr>
+                    <td>manifest</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/html"><code>&lt;html&gt;</code></a></td>
+                    <td>Especifica a URL do cache manifest do documento. documento</td>
+                  </tr>
+                  <tr>
+                    <td>max</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/meter"><code>&lt;meter&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/progress"><code>&lt;progress&gt;</code></a></td>
+                    <td>Indica o valor máximo permitido.</td>
+                  </tr>
+                  <tr>
+                    <td>maxlength</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td>Define o núemro máximo de caracteres permitido no elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>media</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/area"><code>&lt;area&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/source"><code>&lt;source&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/style"><code>&lt;style&gt;</code></a></td>
+                    <td>Especifica uma sugestão da mídia para qual recurso ligado foi designado.</td>
+                  </tr>
+                  <tr>
+                    <td>method</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/form"><code>&lt;form&gt;</code></a></td>
+                    <td>Define qual método HTTP usar quando enviar um formulário. Pode ser GET(padrão) ou POST.</td>
+                  </tr>
+                  <tr>
+                    <td>min</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/meter"><code>&lt;meter&gt;</code></a></td>
+                    <td>Indica o valor mínimo permitido.</td>
+                  </tr>
+                  <tr>
+                    <td>multiple</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/select"><code>&lt;select&gt;</code></a></td>
+                    <td>Indica se múltiplos valores podem ser inseridos em uma entrada do tipo <code>email</code> ou <code>file</code>.</td>
+                  </tr>
+                  <tr>
+                    <td>name</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/form"><code>&lt;form&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/fieldset"><code>&lt;fieldset&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/iframe"><code>&lt;iframe&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/object"><code>&lt;object&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/output"><code>&lt;output&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/select"><code>&lt;select&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/map"><code>&lt;map&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/meta"><code>&lt;meta&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/param"><code>&lt;param&gt;</code></a></td>
+                    <td>Nome do elemento. Por exemplo usado pelo servidor para identificar os campos no envio do formulário.</td>
+                  </tr>
+                  <tr>
+                    <td>novalidate</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/form"><code>&lt;form&gt;</code></a></td>
+                    <td>Este atributo indica que o formulário não deveria ser validado quando enviado.</td>
+                  </tr>
+                  <tr>
+                    <td>open</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/details"><code>&lt;details&gt;</code></a></td>
+                    <td>Indica se os detalhes serão mostrados no carregamento da página.</td>
+                  </tr>
+                  <tr>
+                    <td>optimum</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/meter"><code>&lt;meter&gt;</code></a></td>
+                    <td>Indica o valor numérico optimal.</td>
+                  </tr>
+                  <tr>
+                    <td>pattern</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a></td>
+                    <td>Define uma espreção regular na qual o valor do elemento será validado de encontro.</td>
+                  </tr>
+                  <tr>
+                    <td>ping</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/area"><code>&lt;area&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>placeholder</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td>Fornece uma sugestão ao usuário de o que pode ser inserido no campo.</td>
+                  </tr>
+                  <tr>
+                    <td>poster</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a></td>
+                    <td>Uma URL indicando uma poster frame para mostrar desde que o usuário toque ou busque.</td>
+                  </tr>
+                  <tr>
+                    <td>preload</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/audio"><code>&lt;audio&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a></td>
+                    <td>Indica se todo o recurso, partes dele ou nada deveria ser pré carregado.</td>
+                  </tr>
+                  <tr>
+                    <td>pubdate</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/time"><code>&lt;time&gt;</code></a></td>
+                    <td>Indica se esta data e tempo é a data no mais próximoelemento antecessor<a href="/pt-BR/docs/Web/HTML/Element/article"><code>&lt;article&gt;</code></a>.</td>
+                  </tr>
+                  <tr>
+                    <td>radiogroup</td>
+                    <td><a class="page-not-created" title="A documentação sobre isto ainda não foi escrita; por favor considere contribuir!"><code>&lt;command&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>readonly</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td>Indica se o elemento pode ser editado.</td>
+                  </tr>
+                  <tr>
+                    <td>rel</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/area"><code>&lt;area&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a></td>
+                    <td>Especifica o relacionamento do objeto alvo para o objeto ligado.</td>
+                  </tr>
+                  <tr>
+                    <td>required</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/select"><code>&lt;select&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td>Indica se este elemento é requerido para preencher ou não.</td>
+                  </tr>
+                  <tr>
+                    <td>reversed</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/ol"><code>&lt;ol&gt;</code></a></td>
+                    <td>Indica se a lista deveria ser mostrada em uma ordem decrescente em vez de uma crescente.</td>
+                  </tr>
+                  <tr>
+                    <td>rows</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td>Define o número de linhas em uma área de texto.</td>
+                  </tr>
+                  <tr>
+                    <td>rowspan</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/td"><code>&lt;td&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/th"><code>&lt;th&gt;</code></a></td>
+                    <td>Define o número de linhas que uma célula de tabela deveria abranger mais.</td>
+                  </tr>
+                  <tr>
+                    <td>sandbox</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/iframe"><code>&lt;iframe&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>spellcheck</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Indica se o spell de checagem está permitido para o elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>scope</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/th"><code>&lt;th&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>scoped</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/style"><code>&lt;style&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>seamless</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/iframe"><code>&lt;iframe&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>selected</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/option"><code>&lt;option&gt;</code></a></td>
+                    <td>Define o valor na qual será selecionado no carregamento da página.</td>
+                  </tr>
+                  <tr>
+                    <td>shape</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/area"><code>&lt;area&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>size</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/select"><code>&lt;select&gt;</code></a></td>
+                    <td>Define a largura do elemento (em pixels). Se o elemento de atributo <code>type</code> é <code>text</code> ou <code>password</code> então este é o número de caracteres.</td>
+                  </tr>
+                  <tr>
+                    <td>sizes</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>span</td>
+                    <td><a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/col"><code>&lt;col&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/colgroup"><code>&lt;colgroup&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>src</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/audio"><code>&lt;audio&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/embed"><code>&lt;embed&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/iframe"><code>&lt;iframe&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/source"><code>&lt;source&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/track"><code>&lt;track&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a></td>
+                    <td>URL de um conteúdo incorporável.</td>
+                  </tr>
+                  <tr>
+                    <td>srcdoc</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/iframe"><code>&lt;iframe&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>srclang</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/track"><code>&lt;track&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>start</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/ol"><code>&lt;ol&gt;</code></a></td>
+                    <td>Define o primeiro número se não for 1.</td>
+                  </tr>
+                  <tr>
+                    <td>step</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>style</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Define estilos CSS na qual ultrapassarão estilos previamente configurados.</td>
+                  </tr>
+                  <tr>
+                    <td>summary</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/table"><code>&lt;table&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>tabindex</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Ultrapassa a ordem de tabulação padrão do navegador e segue o especificado como alternativa.</td>
+                  </tr>
+                  <tr>
+                    <td>target</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/area"><code>&lt;area&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/base"><code>&lt;base&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/form"><code>&lt;form&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>title</td>
+                    <td><a href="/pt-BR/docs/HTML/Global_attributes">Global attribute</a></td>
+                    <td>Texto a ser mostrado em uma dica quando suspenso sobre um elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>type</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a class="page-not-created" title="A documentação sobre isto ainda não foi escrita; por favor considere contribuir!"><code>&lt;command&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/embed"><code>&lt;embed&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/object"><code>&lt;object&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/source"><code>&lt;source&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/style"><code>&lt;style&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/menu"><code>&lt;menu&gt;</code></a></td>
+                    <td>Define o tipo de elemento.</td>
+                  </tr>
+                  <tr>
+                    <td>usemap</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/object"><code>&lt;object&gt;</code></a></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>value</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/button"><code>&lt;button&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/option"><code>&lt;option&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/li"><code>&lt;li&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/meter"><code>&lt;meter&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/progress"><code>&lt;progress&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/param"><code>&lt;param&gt;</code></a></td>
+                    <td>Define o valor padrão na qual será mostrado no elemento no carregar da página.</td>
+                  </tr>
+                  <tr>
+                    <td>width</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/canvas"><code>&lt;canvas&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/embed"><code>&lt;embed&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/iframe"><code>&lt;iframe&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></a>, <a class="only-in-en-us" title="Esta página está disponível apenas em inglês no momento" href="/en-US/docs/Web/HTML/Element/object"><code>&lt;object&gt;</code></a>, <a href="/pt-BR/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a></td>
+                    <td>Nota: Em algumas instâncias, tal como <a href="/pt-BR/docs/Web/HTML/Element/div"><code>&lt;div&gt;</code></a>, este é um atributo legado, no caso da propriedade CSS <a href="/pt-BR/docs/Web/CSS/width"><code>width</code></a> deveria ser usado ao em vez. em outros casos, tal como <a href="/pt-BR/docs/Web/HTML/Element/canvas"><code>&lt;canvas&gt;</code></a>, a largura deve ser especificada com este atributo.</td>
+                  </tr>
+                  <tr>
+                    <td>wrap</td>
+                    <td><a href="/pt-BR/docs/Web/HTML/Element/textarea"><code>&lt;textarea&gt;</code></a></td>
+                    <td>Indica se o texto deveria ser enrolado.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </section>
+
 </body>
 </html>

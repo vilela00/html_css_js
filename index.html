@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>HTML, CSS e JS</title>
 </head>
@@ -10,63 +11,261 @@
 <body class="body_index">
     
     <header class="header">
-
+        <div class="header_menu"></div>
     </header>
+        <div class="container_index">
+        <section class="main_section">
+            <div class="menu_lateral">
+                <nav class="menu">
+                    <ul class="menu_list">
+                        
+                        <a href="./introducao.html" target="iframe_home"><li>Introdução</li></a>
 
-    <section class="main_section">
-        <div class="menu_lateral">
-            <nav class="menu">
-                <ul class="menu_list">
-                    <a href="./introducao.html" target="iframe_home"><li>Introdução</li></a>
-                    <a href="./software_ferramentas.html" target="iframe_home"><li>Software e Ferramentas</li></a>
-                        <ul class="menu_list1">
-                            <a href="./vscode.html" target="iframe_home"><li>VS Code</li></a>
-                            <a href="./git_github.html" target="iframe_home"><li>GIT e GitHub</li></a>
-                            <a href="./vercel.html" target="iframe_home"><li>Vercel</li></a>
-                            <a href="./bootstrap.html" target="iframe_home"><li>Bootstrap</li></a>
-                            <a href="./fontawesome.html" target="iframe_home"><li>Fontawesome</li></a>
-                            <a href="./figma.html" target="iframe_home"><li>Figma</li></a>
-                        </ul>
-                        <a href="./tags_html.html" target="iframe_home"><li>Tags HTML</li></a>
-                    <li>HTML Semântico</li>
-                    <li>iFrame</li>
-                    <li>CSS</li>
-                        <ul class="menu_list1">
-                            <li>Básico</li>
-                            <li>Funções CSS</li>
-                            <li>Overflow</li>
-                            <li>Box Modeling</li>
-                            <li>Position</li>
-                            <li>Pseudo Classes e Pseudo Elementos</li>
-                            <li>Animation, transform e transition</li>
-                            <li>Display</li>
-                                <ul class="menu_list2">
-                                    <li>Flex</li>
-                                    <li>Grid</li>
-                                    <li>Block</li>
-                                    <li>None</li>
-                                </ul>
-                            <li>Responsividade</li>
-                            <li>Framework</li>
-                            <li>Como usar variáveis</li>
-                        </ul>
-                    <li>JavaScript</li>
-                        <ul class="menu_list1">
-                            <li>Const, Let e Var</li>
-                            <li>Operações matemáticas</li>
-                            <li>Juntar e concatenar</li>
-                            <li>Console Log</li>
-                            <li>Prompt</li>
-                            <li>Alert</li>
-                        </ul>
-                </ul>
-            </nav>
-        </div>
-        <div class="conteudo_iframe">
-            <iframe src="./introducao.html" name="iframe_home" class="iframe_home"></iframe>      
-        </div>
-    </section>
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">                               
+                                <a href="./software_ferramentas.html" target="iframe_home"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                    <li>Software e Ferramentas</li>
+                                </button></a>
+                              </h2>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <a href="./vscode.html" target="iframe_home"><li>VS Code</li></a>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <a href="./git_github.html" target="iframe_home"><li>GIT e GitHub</li></a>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <a href="./vercel.html" target="iframe_home"><li>Vercel</li></a>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <a href="./bootstrap.html" target="iframe_home"><li>Bootstrap</li></a>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <a href="./fontawesome.html" target="iframe_home"><li>Fontawesome</li></a>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <a href="./figma.html" target="iframe_home"><li>Figma</li></a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                            
 
+                          <!--
+                        <a href="./software_ferramentas.html" target="iframe_home"><li>Software e Ferramentas</li></a>
+                            <ul class="menu_list1">
+                                <a href="./vscode.html" target="iframe_home"><li>VS Code</li></a>
+                                <a href="./git_github.html" target="iframe_home"><li>GIT e GitHub</li></a>
+                                <a href="./vercel.html" target="iframe_home"><li>Vercel</li></a>
+                                <a href="./bootstrap.html" target="iframe_home"><li>Bootstrap</li></a>
+                                <a href="./fontawesome.html" target="iframe_home"><li>Fontawesome</li></a>
+                                <a href="./figma.html" target="iframe_home"><li>Figma</li></a>
+                            </ul>-->
+
+
+                        <a href="./tags_html.html" target="iframe_home"><li>Tags e Atributos HTML</li></a>
+                        <a href="./semantico.html" target="iframe_home"><li>HTML Semântico</li></a>
+                        <a href="./iframe.html" target="iframe_home"><li>iFrame</li></a>
+
+
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">                               
+                                <a href="./css.html" target="iframe_home"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    <li>CSS</li>
+                                </button></a>
+                              </h2>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <li>Básico</li>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <li>Funções CSS</li>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <li>Overflow</li>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <li>Box Modeling</li>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <li>Position</li>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <li>Pseudo Classes e Pseudo Elementos</li>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <li>Animation, transform e transition</li>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    
+                                    
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">                               
+                                            <a href="./display.html" target="iframe_home"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                <li>Display</li>
+                                            </button></a>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <li>Flex</li>
+                                            </div>
+                                          </div>
+                                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <li>Grid</li>
+                                            </div>
+                                          </div>
+                                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <li>Block</li>
+                                            </div>
+                                          </div>
+                                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <li>None</li>
+                                            </div>
+                                          </div>                                 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <li>Responsividade</li>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <li>Framework</li>
+                                </div>
+                              </div>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <li>Como usar variáveis</li>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                  
+
+
+                        <!--
+                        <li>CSS</li>
+                            <ul class="menu_list1">
+                                <li>Básico</li>
+                                <li>Funções CSS</li>
+                                <li>Overflow</li>
+                                <li>Box Modeling</li>
+                                <li>Position</li>
+                                <li>Pseudo Classes e Pseudo Elementos</li>
+                                <li>Animation, transform e transition</li>
+                                <li>Display</li>
+                                    <ul class="menu_list2">
+                                        <li>Flex</li>
+                                        <li>Grid</li>
+                                        <li>Block</li>
+                                        <li>None</li>
+                                    </ul>
+                                <li>Responsividade</li>
+                                <li>Framework</li>
+                                <li>Como usar variáveis</li>
+                            </ul>-->
+
+
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">                               
+                                    <a href="./javascript.html" target="iframe_home"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                        <li>JavaScript</li>
+                                    </button></a>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <li>Const, Let e Var</li>
+                                    </div>
+                                  </div>
+                                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <li>Operações matemáticas</li>
+                                    </div>
+                                  </div>
+                                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <li>Juntar e concatenar</li>
+                                    </div>
+                                  </div>
+                                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <li>Console Log</li>
+                                    </div>
+                                  </div>
+                                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <li>Prompt</li>
+                                    </div>
+                                  </div>
+                                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <li>Alert</li>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+
+                            <!--
+                        <li>JavaScript</li>
+                            <ul class="menu_list1">
+                                <li>Const, Let e Var</li>
+                                <li>Operações matemáticas</li>
+                                <li>Juntar e concatenar</li>
+                                <li>Console Log</li>
+                                <li>Prompt</li>
+                                <li>Alert</li>
+                            </ul>-->
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="conteudo_iframe">
+                <iframe src="./introducao.html" name="iframe_home" class="iframe_home"></iframe>      
+            </div>
+        </section>
+        </div>
+
+        <footer>
+            <div class="footer"></div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
