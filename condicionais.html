@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Condicionais JS</title>
+</head>
+<body class="overflow">
+    <h1>Condicionais JavaScript</h1>
+    <h2>Permite decidir se um determinado bloco de comandos será executado a partir de uma condição</h2>
+    <h3>if = SE</h3>
+    <p>É usado para iniciar uma tratativa de condição. Uma verificação de condição SEMPRE irá iniciar com if.</p>
+    <h3>else = SENÃO</h3>
+    <p>Verifica se a condição seguinte ao * if * irá atender ao solicitado. Quando se utiliza * else * o navegador NÃO para a execução da verificação, mesmo que a condição já tenha sido atendida. Exemplo: você atribuiu uma condição com 10 linhas de * else *. O navegador irá realizar a verificação em todas as linhas, mesmo que a condição já tenha sido atendida na primeira linha e as demias não atendam ao solicitado.</p>
+    <h3>else if = CASO CONTRÁRIO</h3>
+    <p>O * else if * pode ser utilizado para que a verificação seja interrompida caso a condição seja atendida. Se a condição atribuída for atendida logo na primira linha do script, o navegador irá interromper a verificação das demais condições.</p>
+    <h3>ENTÃO - o que deve ser feito</h3>
+    <p>A instrução sempre virá no formato de * SE (uma condição), ENTÃO (o que deve ser feito - um prompt, um alert, ou console log), SENÃO (caso a primeira verificação não seja atendida - o que deve ser feito) - SENÃO ou CASO CONTRÁRIO podem ser utilizados diversas vezes para verificação das condições - resultado final com base nas condições determinadas.</p>
+    <p>Serão utilizadas verificações baseadas em verdadeiro ou falso para montagem de fluxo de condições.</p>
+    <h3>"", 0 e null</h3>
+    <p>São valores utilizados para definir * false * para o JS.</p>
+    <h3>Comparativos</h3>
+    <p>O primeiro comparativo é o == ou ===. Cuidado para não utilizar o =, que é usado para atribuir um valor a uma variável. == compara os valores, enquanto === compara os valores e o tipo. Caso uma variável seja atribuída como uma string, e você solicitar uma comparação com um número e usar o ==, se a condição for atendida, o valor será TRUE. Caso você utilize o === neste mesmo caso, o resultado será FALSE pois a string não foi atribuída a um valor numérico (Number, parseInt ou ParseFloat). Caso tenha sido aplicado um valor numérico à string, aí sim vai dar um resultado TRUE pois além dos valores serem iguais, os tipos também são.</p>
+    <img src="./img/script if.png" alt="" width="80%">
+    <p class="italic">Perceba que o * else * não está seguido por uma condição, isso quer dizer que qualquer outra resposta que NÃO atenda à condição, será direcionado ao alert 'Acesso negado' no exemplo acima, e 'Voce e muito velho para essa tarefa' no exemplo abaixo.</p>
+    <img src="./img/comparativo idade.png" alt="" width="80%">
+    <p>Neste caso foi considerada a idade maior durante o intervalo analisado, pois dessa forma não se fez necessário utilizar o &&, que significa and ou e, neste caso poderia ser usado da seguinte forma:</p>
+    <img src="./img/&&.png" alt="" width="500px">
+    <h3>Exemplo de comparativo com alert</h3>
+    <img src="./img/1 a 5.png" alt="" width="80%">
+</body>
+</html>
