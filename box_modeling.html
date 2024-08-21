@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Box Modeling</title>
+</head>
+<body class="overflow">
+    <h1>Box Modeling</h1>
+    <h2>Compreender e modificar elementos em bloco e em linha - metodologia BEM</h2>
+    <p>Padrão de escrita snake foi adotado para este projeto (separado_por_underline).</p>
+    <p>A metodologia BEM consiste em organizar e padronizar a execução da estilização via CSS no projeto.</p>
+    <p>Primeiro separamos o projeto por um bloco, que no caso de páginas web, são comumente chamados de containers. Dentro dos containers, visualizamos a forma como nosso conteúdo será distribuído de uma forma mais macro. Pode conter um cabeçalho, barra lateral, seções distintas, artigos, rodapé, etc.</p>
+    <p>Definimos uma propriedade geral que atenda a todo o projeto de forma padronizada.</p>
+    <p>De maneira padrão pode-se adotar dois underlines __ para classes ou ids pais, e um underline _ para classes ou ids filhos. Você pode utilizar uma classe header__menu que pertence ao nav e está dentro do header, e header__menu_list para nomear a classe de uma lista dentro do seu menu que pertence ao head. Indicado para projetos de grande extensão para que possa ser visualizado facilmente as classes pai.</p>
+    <p>Os elementos (h, p, a, i, il, ul) podem ser chamados diretamente após a classe ou id, sem que seja necessário criar uma classe para ele. Por exemplo, .header p sinliza que todos os elemntos p dentro da do header irão receber as modificações css.</p>
+    <p>Elementos em linha (span, button) são vistos lado a lado, enquanto elementos em bloco (div, section, header) são vistos um embaixo do outro. Em Box Modeling, tudo é uma caixa. Content, padding, border e margin são propriedades de uma caixa.</p>
+    <img src="./img/box modeling.png" alt="" width="40%">
+    <p>Width pode ser usado com % e max ou min width para limitar o tamanho do bloco.</p>
+</body>
+</html>
