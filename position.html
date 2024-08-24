@@ -11,29 +11,69 @@
     <h2>Define uma posição de um elemento em realção a outro (pai)</h2>
     <h3>Static</h3>
     <p>Atribuído por padrão a todos os elementos que não possuem outro valor de position definido. Dessa forma nenhum elemento transpassa o outro. Eles são dispostos lado a lado ou empilhados sem nenhum espaçamento entre eles a não ser que seja definido.</p>
+    <div class="container_cards_position">    
+        <div class="container_position">
+            <div class="static">
+                <div class="static1">
+                    <p>Q1</p>
+                </div>
+                <div class="static2">
+                    <p>Q2</p>
+                </div>
+                <div class="static3">
+                    <p>Q3</p>
+                </div>
+            </div>
+            <p class="info_position">Position static (por padrão).</p>
+        </div>
+        <div class="container_position">
+            <div class="static_flex">
+                <div class="static1">
+                    <p>Q1</p>
+                </div>
+                <div class="static2">
+                    <p>Q2</p>
+                </div>
+                <div class="static3">
+                    <p>Q3</p>
+                </div>
+            </div>
+            <p class="info_position">Position static com display flex. Use justify content para adicionar espaços iguais entre elementos.</p>
+        </div>         
+    </div> 
+    <h3>Relative</h3>
+    <p>O position relative é usado com a definição de uma posição usando propriedades de indicação para dizer onde o elemento será posicionado.</p>
+    <p>Ao utilizar o position relative atente-se à responsividade da página pois os elementos irão se sobrepor ao ter variação de viewport, diferente do static, que empurra o elemento para o lado e para baixo.</p>
     <p>o atributo de position * absolute * precisa ser usado juntamente com o position *relative * em seu elemento pai.</p>
-    <div class="ex_position">
-        <div class="static">
-            static
+    <div class="container_cards_position">    
+        <div class="container_position">
+            <div class="relative">
+                <div class="relative1">
+                    <p>Q1</p>
+                </div>
+                <div class="relative2">
+                    <p>Q2</p>
+                </div>
+                <div class="relative3">
+                    <p>Q3</p>
+                </div>
+            </div>
+            <p class="info_position">Position relative utilizando calc() para deixá-los alinhados desta forma.</p>
         </div>
-        <div class="relative">
-            relative
-        </div>
-        <div class="absolute">
-            absolute
-        </div>
-        <div class="relative1">
-            relative
-        </div>
-        <div class="relative2">
-            relative
-        </div>
-        <div class="fixed">
-            fixed
-        </div>
-        <div class="sticky">
-            sticky
-        </div>
+        <div class="container_position">
+            <div class="relative">
+                <div class="relative4">
+                    <p>Q1</p>
+                </div>
+                <div class="relative5">
+                    <p>Q2</p>
+                </div>
+                <div class="relative6">
+                    <p>Q3</p>
+                </div>
+            </div>
+            <p class="info_position">Position relative com sobreposição de elementos utilizando z-index.</p>
+        </div>         
     </div>
 </body>
 </html>
