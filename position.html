@@ -75,5 +75,175 @@
             <p class="info_position">Position relative com sobreposição de elementos utilizando z-index.</p>
         </div>         
     </div>
+    <h3>Absolute</h3>
+    <p>O position absolute é usado com a definição de uma posição usando propriedades de indicação para dizer onde o elemento será posicionado.</p>
+    <p>Ao utilizar o position relative atente-se à responsividade da página pois os elementos irão se sobrepor ao ter variação de viewport, diferente do static, que empurra o elemento para o lado e para baixo.</p>
+    <p>Perceba que o position absolute não acompanha a responsividade, pois quando é alterado o viewport, o elemento absolute permance travado na página.</p>
+    <div class="container_cards_position">    
+        <div class="container_position">
+            <div class="absolute_">
+                <div class="absolute1">
+                    <p>Q1</p>
+                </div>
+                <div class="absolute2">
+                    <p>Q2</p>
+                </div>
+                <div class="absolute3">
+                    <p>Q3</p>
+                </div>
+            </div>
+            <p class="info_position">Position absolute utilizando margin (para dar espaçamento dentro do elemento pai). Usar o position absolute sem margin o faz alinhar como o static. Caso defina top, bottom, left ou right, será em relação à pagina inteira e não ao elemento.</p>
+        </div>
+        <div class="container_position">
+            <div class="absolute_">
+                <div class="absolute4">
+                    <p>Q1</p>
+                </div>
+                <div class="absolute5">
+                    <p>Q2</p>
+                </div>
+                <div class="absolute6">
+                    <p>Q3</p>
+                </div>
+                <div class="absolute7">
+                    <p>Q4</p>
+                </div>
+                <div class="absolute8">
+                    <p>Q5</p>
+                </div>
+            </div>
+            <p class="info_position">Positon absolute com margin considerando o tamanho do elemento para posicionar.</p>
+        </div>         
+    </div>
+    <h3>Fixed</h3>
+    <p>O position fixed faz com que o elemento fique preso ao viewport, a não ser que o um elemento pai tenha uma propriedade de transform, perspective ou filter definido como diferente de none. Neste caso, o pai se comporta como o container que o contém.</p>
+    <div class="container_cards_position">    
+        <div class="container_position">
+            <div class="fixed_">
+                <div class="fixed1">
+                    <p>Q1</p>
+                </div>
+                <div class="fixed2">
+                    <p>Q2</p>
+                </div>
+                <div class="fixed3">
+                    <p>Q3</p>
+                </div>
+            </div>
+            <p class="info_position">Position fixed usado com * filter * na div pai, para fixar o elemento na div pai, e não no viewport. Caso seja usado sem um dos atributos citados acima, o fixed faz com que o elemento fique preso à tela enquanto rola a página.</p>
+        </div>
+        <div class="container_position">
+            <div class="fixed_">
+                <div class="fixed4">
+                    <p>Q1</p>
+                </div>
+                <div class="fixed5">
+                    <p>Q2</p>
+                </div>
+                <div class="fixed6">
+                    <p>Q3</p>
+                </div>
+                <div class="fixed7">
+                    <p>Q4</p>
+                </div>
+                <div class="fixed8">
+                    <p>Q5</p>
+                </div>
+            </div>
+            <p class="info_position">Mesma montagem do exemplo acima, com fixed. Fica mais previsível pois defini-se com 0 a partir do ponto escolhido. Aqui também foi usado o * filter * para tornar a div pai como sendo a base para o fixed.</p>
+        </div>         
+    </div>
+    <h3>Sticky</h3>
+    <p>O position sticky posiciona o elemento de acordo com o fluxo normal do documento e, em seguida, deslocado em relação ao pai de rolagem mais próximo.</p>
+    <div class="container_cards_position">    
+        <div class="container_position">
+            <div class="sticky_">
+                <div class="sticky1">
+                    <p>Q1</p>
+                </div>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <div class="sticky2">
+                    <p>Q2</p>
+                </div>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <div class="sticky3">
+                    <p>Q3</p>
+                </div>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+            </div>
+            <p class="info_position">Position sticky usado para acompanhar rolagem de um elemento com overflow.</p>
+        </div>
+        <div class="container_position">
+            <div class="sticky__">
+                <div class="sticky4">
+                    <p>Q1</p>
+                </div>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <div class="sticky5">
+                    <p>Q2</p>
+                </div>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <div class="sticky6">
+                    <p>Q3</p>
+                </div>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+            </div>
+            <p class="info_position">Position sticky usado para acompanhar rolagem de um elemento na horizontal com overflow.</p>
+        </div>        
+    </div>
 </body>
 </html>
