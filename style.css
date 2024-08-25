@@ -304,7 +304,7 @@ img {
     width: 100%;
     max-width: 1400px;
     background-color: #ffffff;
-    min-height: 91vh;
+    min-height: calc(100vh - 80px)
 }
 
 .menu_lateral {
@@ -312,10 +312,38 @@ img {
     border-radius: 5px;
     padding: 0 10px 10px 0;
     width: 35%;
+    overflow-y: auto;
+}
+
+/* ESTILIZAÇÃO DO SCROLLBAR */
+
+.menu_lateral::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+.menu_lateral::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+.menu_lateral::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+.overflow::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+.overflow::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+    background: #dad7d7;
 }
 
 .menu {
     margin-top: 20px;
+    height: calc(100vh - 110px)
 }
 
 .menu_list1 {
@@ -345,17 +373,17 @@ img {
 
 .conteudo_iframe {
     width: 100%;
-}
-
-.overflow::-webkit-scrollbar {
-    display: none !important;
+    padding-right: 0;
 }
 
 .iframe_home {
     border: none;
     width: 100%;
     height: 100%;
-    padding: 25px 10px 20px 20px;
+}
+
+.overflow {
+    margin: 20px;
 }
 
 .footer {
