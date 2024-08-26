@@ -120,6 +120,15 @@ img {
     .organize_mobile1 .tag li, .organize_mobile .tag li {
         font-size: 12px;
     }
+    .container_cards_position {
+        flex-direction: column;
+    }
+    .overflow .container_position {
+        width: 100%;
+    }
+    .container_position .info_position {
+        width: 50%;
+    }
 }
 
 /* Exemplo de gradiente animado para fundo
@@ -728,6 +737,8 @@ img {
 
 .fixed_ {
     filter: brightness();
+    transform: none;
+    perspective: none;
 }
 
 .fixed1 {
