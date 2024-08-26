@@ -737,8 +737,8 @@ img {
 
 .fixed_ {
     filter: brightness();
-    transform: none;
-    perspective: none;
+    transform: translate();
+    perspective: 0dvh;
 }
 
 .fixed1 {
