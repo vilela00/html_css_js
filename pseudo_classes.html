@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pseudo Classes</title>
+</head>
+<body class="overflow">
+    <h1>Pseudo-Classes :</h1>
+    <p>Palavra chave adicionada a seletores que especifica um estado especial do elemento selecionado.</p>
+    <p>Veja um material completo <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes">CLICANDO AQUI.</a></p>
+    <h2>:active</h2>
+    <p>Pseudo-classe atribuída a links. Ela deve ser utilizada com base na regra LVHA - :link :visited :hover :active.</p>
+    <p class="exemplo_pseudo">Exemplo: <a href=#>Link de Teste</a></p>
+    <h2>:checked</h2>
+    <p>Representa um elemento input type radio ou checkbox, ou option em um select (caixa de seleção dropdown), que está marcada ou alternando para um estado ligado. O usuário pode mudar seu estado clicando no elemento.</p>
+    <p>A utilização da personalização destes elementos depende de resetar o webkit importado do Bootstrap ou qualquer outro framework, utilizando o -webkit-appearance: none;</p>
+    <p>Pode-se utilizar também os inputs checkbox ou radio escondidos (display none) para incorporar valores booleanos. Verifique um exemplo <a href="./seletor_de_tema.html">NESTE LINK</a>, onde foi usado o checkbox escondido no botão seletor de temas.</p>
+    <h2>:default</h2>
+    <p>Também atribuída aos inputs radio, checkbox e option, incluíndo também o elemento button. É usado para estilizar os inputs que estão checked por padrão. Aqueles que já vem selecionados, além do preencimento padrão.</p>
+    <h2>:dir()</h2>
+    <p>Usado para estilizar linhas de texto com base na direção da leitura. Requer sempre um parâmetro para funcionar ltr, ou rtl (left to right ou rigth to left).</p>
+    <h2>:disabled</h2>
+    <p>Define um estilo para um elemento desabilitado.</p>
+    <h2>:empty</h2>
+    <p>Representa qualquer elemento que não tenha filhos ou blocos de texto, incluíndo, espaços vazios.</p>
+    <h2>:enabled</h2>
+    <p>Representa qualquer elemento ativado. Um elemento é ativado se puder ser selecionado, clicado, digitado ou aceitar foco.</p>
+    <h2>:first</h2>
+    <p>Utiliza a regra @page e representa a primeira página de um documento.</p>
+    <h2>:first-child, :last-child, :nth-last-child()</h2>
+    <p>Representa o primeiro filho. Dentro de um container, tendo várias divs, ao utilizar o first-child vocês está selecionando apenas a primeira div. Da mesma forma que o last-child seleciona a última div. O nth-last-child seleciona com base em uma posição, contando a partir do último elemento.</p>
+    <h2>:first-of-type, :last-of-type, :nth-last-of-type()</h2>
+    <p>Representa o primeiro elemento do seu tipo entre os filhos de seu pai, assim como o last representa o último. O nth-last-of-type seleciona os elementos de acordo com o tipo, com base em uma posição, contando a partir do último elemento.</p>
+    <h2>:fullscreen</h2>
+    <p>Corresponde a todos os elementos que estiverem em modo de tela cheia.</p>
+    <h2>:focus</h2>
+    <p>Aplicado quando um elemento recebe foco. Clicar em inputs de texto de um formulário, por exemplo.</p>
+    <h2>:hover</h2>
+    <p>Corresponde quando o usuário passa o mouse por cima, mas não clica. Pode ser substituída pelas outras pseudo-classes :link, :visited e :active.</p>
+    <h2>:indeterminate</h2>
+    <p>Representa qualquer elemento de um formulário que tem seu estado como indeterminado.</p>
+    <h2>:in-range, :out-of-range</h2>
+    <p>Define uma estilização de acordo com um limite de valores definidos no html, dentro ou fora do intervalo.</p>
+    <h2>:invalid</h2>
+    <p>Representa qualquer elemento input ou form que seja inválido.</p>
+    <h2>:lang()</h2>
+    <p>Representa elementos baseando na linguagem.</p>
+    <h2>:left, :right</h2>
+    <p>Utilizado com a regra @page, representa todas as páginas à esquerda ou à direita de um documento.</p>
+    <h2>:link</h2>
+    <p>Permite que sejam selecionados os links dentro de um elemento. Para funcionar corretamente, ele deve ser utilizado antes do :hover, :active ou :visited.</p>
+    <h2>:not()</h2>
+    <p>Uma pseudo-classe de negação, usada para estilizar caso um elemento seja especificado fora da negação. Se utiizar o p:not(.uma_classe), significa que quando o p tiver essa classe, não receberá o css.</p>
+    <h2>:nth-child()</h2>
+    <p>Seleciona elementos com base nas suas posições em um grupo de elementos irmãos. Sempre utilizado com um valor entre os ()</p>
+    <p>Exemplos de seletores: tr:nth-child(odd) ou tr:nth-child(2n+1) - seleciona todas as linhas ímpares de uma tabela; tr:nth-child(even) ou tr:nth-child(2n) - seleciona todas as linhas pares de uma tabela; :nth-child(7), seleciona o sétimo elemento.</p>
+    <h2>:nth-of-type()</h2>
+    <p>Seleciona elementos com base nos seus tipos e nas suas posições em um grupo de elementos irmãos. Sempre utilizado com um valor entre os ()</p>
+    <h2>:only-child</h2>
+    <p>Representa um elemento sem nenhum elemento irmão.</p>
+    <h2>:only-of-type</h2>
+    <p>Representa qualquer elemento que não possui irmãos de um mesmo tipo.</p>
+    <h2>:optional</h2>
+    <p>Representa qualquer elemento input, select ou textarea que não contenha o atributo required.</p>
+    <h2>:read-only</h2>
+    <p>Seleciona elementos que não são editáveis pelo usuário.</p>
+    <h2>:read-write</h2>
+    <p>Representa um elemento que é editável pelo usuário.</p>
+    <h2>:required</h2>
+    <p>Representa qualquer elemento que seja definido como required.</p>
+    <h2>:root</h2>
+    <p>Representa o documento html raiz.</p>
+    <h2>:scope</h2>
+    <p>Pode representa o html ou qualquer bloco onde ele seja especificado.</p>
+    <h2>:target</h2>
+    <p>Representa o destino após um link ou botão ser clicado.</p>
+    <h2>:valid</h2>
+    <p>Representa qualquer input ou elemento do form cujo conteúdo foi validado com sucesso.</p>
+    <h2>:visited</h2>
+    <p>Representa links que já foram visitados.</p>
+</body>
+</html>

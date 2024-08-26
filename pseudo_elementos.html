@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pseudo-elementos</title>
+</head>
+<body class="overflow">
+    <h1>Pseudo-elementos ::</h1>
+    <p>Palavra chave adicionada a um seletor que permite que vocês personalize uma parte específica do elelemtno selecionado.</p>
+    <h2>::after</h2>
+    <p class="ex_after">Cria um pseudo-elemento que é o último filho do elemento selecionado. Comumente utilizado para adicionar um conteúdo de um elemento com a propriedade content.</p>
+    <img class="img2" src="./img/after.png" alt="" width="100%">
+    <div class="after"><p>Posicione o cursor sobre as palavras sublinhadas para um exemplo de utilização do <span data-descr="Exemplo de hover com after.">after</span> com <span data-descr="Outro exemplo de hover.">hover.</span></p></div>
+    <h2>::before</h2>
+    <p>Da mesma forma que o after, basicamente representa um elemento que será criado como primeiro filho de um elemento. Muito utilizado para inserção de content.</p>
+    <h3>Exemplo de lista de tarefas com ::before</h3>
+    <ul class="ex_before">
+        <li>Fazer compras</li>
+        <li>Levar o cachorro para passear</li>
+        <li>Exercitar-se</li>
+        <li>Escrever codigo</li>
+        <li>Ir ao médico</li>
+        <li>Lavar a louça</li>
+      </ul>
+    <h2>::file-selector-button</h2>
+    <p>Representa um input do tipo file. Personaliza o botão do input.</p>
+    <h2>::first-letter</h2>
+    <p>Representa a primeira letra de da primeira linha de um bloco.</p>
+    <h2>::first-line</h2>
+    <p>Aplica estilo à primeira linha de um bloco.</p>
+    <h2>::grammar-error</h2>
+    <p>Utilizado para estilizar quando existe uma sinalização de erro gramatical. É utilizado junto com o contenteditable spellcheck = true para realizar a verificação ortográfica de acordo com a linguagem utilizada. Aqui estamos estipulando um conteúdo editável pelo usuário e nesse bloco haverá verificação ortográfica.</p>
+    <p class="ex_grammar" contenteditable spellcheck="true">Escreva algo aqui e verifique a ortografia:</p>
+    <h2>::marker</h2>
+    <p>Seleciona a caixa de marcação de uma lista, que normalmente contém uma bola ou números. Funciona com qualquer elemento setado como display list-item, assim como nas tags li e summary.</p>
+    <h2>::placeholder</h2>
+    <p>Personaliza o texto que é definido como parte do elemento input.</p>
+    <h2>::selection</h2>
+    <p>Aplica estilo ao conteúdo selecionado pelo usuário, tal como um texto, onde ele clica e arrasta para selecionar.</p>
+
+<script>
+    const list = document.querySelector("ul");
+list.addEventListener(
+  "click",
+  function (ev) {
+    if (ev.target.tagName === "LI") {
+      ev.target.classList.toggle("done");
+    }
+  },
+  false,
+);
+</script>
+
+</body>
+</html>
