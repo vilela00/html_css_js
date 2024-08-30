@@ -1046,3 +1046,17 @@ img {
     color: #b84949;
     font-weight: bold;
 }
+
+.sumario {
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.quatro_img img {
+    padding-top: 0;
+    vertical-align: top;
+}
+
+.quatro_img {
+    margin-top: 16px;
+}
