@@ -332,6 +332,9 @@ img {
     justify-content: center;
     background-color: #f5f5f5;
     z-index: 0;
+    position: relative;
+    top: 50px;
+    bottom: 30px;
 }
 
 .main_section {
@@ -339,7 +342,6 @@ img {
     width: 100%;
     max-width: 1400px;
     background-color: #ffffff;
-    padding: 50px 0 30px 0;
 }
 
 .menu_lateral {
