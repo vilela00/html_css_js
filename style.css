@@ -217,6 +217,10 @@ img {
 
 /* FIM DO BOTÃO */
 
+.body_index {
+    height: 100vh;
+}
+
 .header_menu {
     display: flex;
     justify-content: center;
