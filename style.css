@@ -223,6 +223,11 @@ img {
 
 /* FIM DO BOTÃO */    
 
+
+.body_index {
+    overflow: hidden;
+}
+
 .header_menu {
     display: flex;
     justify-content: center;
@@ -380,10 +385,6 @@ img {
     background: #dad7d7;
 }
 
-.overflow::-webkit-overflow-scrolling {
-    touch-action: auto;
-}
-
 .menu {
     margin-top: 20px;
     height: calc(100vh - 110px)
@@ -435,8 +436,6 @@ img {
     height: 30px;
     border-top: #e4e4e4 solid 0.1px;
     background-color: #ffffff;
-    position: fixed;
-    bottom: 0;
 }
 
 .footer p {
