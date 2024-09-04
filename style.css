@@ -436,6 +436,7 @@ img {
     height: 30px;
     border-top: #e4e4e4 solid 0.1px;
     background-color: #ffffff;
+    position: fixed;
 }
 
 .footer p {
