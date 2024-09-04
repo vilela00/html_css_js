@@ -115,9 +115,15 @@ img {
     .header_menu .info_header {
         display: none;
     }
+    .main_section .conteudo_iframe {
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width:700px) {
+    .main_section .conteudo_iframe {
+        padding-left: 0;
+    }
     .overflow .container_tags {
         display: flex;
         flex-direction: column;
@@ -215,7 +221,7 @@ img {
     display: none;
 }
 
-/* FIM DO BOTÃO */
+/* FIM DO BOTÃO */    
 
 .header_menu {
     display: flex;
@@ -372,6 +378,10 @@ img {
 
 .overflow::-webkit-scrollbar-thumb {
     background: #dad7d7;
+}
+
+.overflow::-webkit-overflow-scrolling {
+    touch-action: auto;
 }
 
 .menu {
