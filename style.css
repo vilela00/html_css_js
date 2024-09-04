@@ -155,6 +155,12 @@ img {
         flex-direction: column;
         align-items: center;
     }
+    .body_index .container_index {
+        height: calc(100vh - 57px);
+    }
+    .footer {
+        display: none;
+    }
 }
 
 /* Exemplo de gradiente animado para fundo
@@ -228,7 +234,7 @@ img {
 /* FIM DO BOTÃO */    
 
 .body_index {
-    height: 100%;
+    height: 100vh;
 }
 
 .header_menu {
@@ -351,7 +357,7 @@ img {
     width: 100%;
     max-width: 1400px;
     background-color: #ffffff;
-    height: calc(100vh - 80px);
+    height: 100%;
 }
 
 .menu_lateral {
@@ -420,8 +426,7 @@ img {
 .conteudo_iframe {
     width: 100%;
     padding-right: 0;
-    height: calc(100vh - 80px);
-    margin-bottom: 30px;
+    height: 100%;
 }
 
 .iframe_home {
@@ -439,7 +444,6 @@ img {
     height: 30px;
     border-top: #e4e4e4 solid 0.1px;
     background-color: #ffffff;
-    -webkit-backface-visibility: hidden;
 }
 
 .footer p {
