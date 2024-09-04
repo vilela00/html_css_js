@@ -419,6 +419,7 @@ img {
     width: 100%;
     padding-right: 0;
     height: calc(100vh - 80px);
+    margin-bottom: 30px;
 }
 
 .iframe_home {
