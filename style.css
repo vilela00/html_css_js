@@ -223,9 +223,9 @@ img {
 
 /* FIM DO BOTÃO */    
 
-
 .body_index {
     overflow: hidden;
+    height: 100%;
 }
 
 .header_menu {
