@@ -426,6 +426,7 @@ img {
 .conteudo_iframe {
     width: 100%;
     padding-right: 0;
+    padding-left: 0;
     height: 100%;
 }
 
