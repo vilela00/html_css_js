@@ -161,6 +161,18 @@ img {
     .footer {
         display: none;
     }
+    .container_flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .overflow .container_grid {
+        width: 100%;
+        grid-template-rows: 70% 53%;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "imagem"
+        "conteudo";
+    }
 }
 
 /* Exemplo de gradiente animado para fundo
@@ -1074,4 +1086,101 @@ img {
 
 .quatro_img {
     margin-top: 16px;
+}
+
+.container_flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container_flex2 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.sub_menu_um, .sub_menu_dois {
+    display: flex;
+    gap: 20px;
+}
+
+.item_menu {
+    width: 100px;
+    height: 30px;
+    background-color: #64aae2;
+    border-radius: 5px;
+}
+
+.item_menu1 {
+    width: 100px;
+    height: 30px;
+    background-color: #d339a5;
+    border-radius: 5px;
+}
+
+.container_grid {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-areas: 
+    "imagem conteudo";
+}
+
+.imagem_grid {
+    grid-area: imagem;
+}
+
+.exemplo_pagina_grid {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    grid-area: conteudo;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 15% 10% 40% 15% 10%;
+    grid-template-areas: 
+    "header_grid header_grid"
+    "section_um_grid section_um_grid"
+    "aside_um_grid aside_dois_grid"
+    "section_dois_grid section_dois_grid"
+    "footer_grid footer_grid";
+}
+
+.header_grid {
+    background-color: #b84949;
+    grid-area: header_grid;
+    text-align: center;
+}
+
+.section_um_grid {
+    background-color: #5f074c;
+    grid-area: section_um_grid;
+    text-align: center;
+}
+
+.aside_um_grid {
+    background-color: #64aae2;
+    grid-area: aside_um_grid;
+    text-align: center;
+}
+
+.aside_dois_grid {
+    background-color: #6fd477;
+    grid-area: aside_dois_grid;
+    text-align: center;
+}
+
+.section_dois_grid {
+    background-color: #dd9f43;
+    grid-area: section_dois_grid;
+    text-align: center;
+}
+
+.footer_grid {
+    background-color: #747474;
+    grid-area: footer_grid;
+    text-align: center;
 }
